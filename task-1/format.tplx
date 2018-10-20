@@ -46,12 +46,13 @@
 
 ((* block codecell *))
     ((* block input_group *))
-    ((* if not cell['outputs'] *))           
+    ((* if not cell['outputs'] *))
 \begin{Verbatim}[
     frame=single,
-    samepage=true, 
-    xleftmargin=.5cm,
-    xrightmargin=.5cm
+    samepage=true,
+    fontsize=\small,
+    xleftmargin=1cm,
+    xrightmargin=1cm
 ]
 ((( cell.source )))
 \end{Verbatim}
