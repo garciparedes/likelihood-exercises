@@ -1,0 +1,67 @@
+((* set cell_style = 'style_bw_python.tplx' *))
+((*- extends 'article.tplx' -*))
+
+((* block docclass *))
+    \documentclass{article}
+
+((* endblock docclass *))
+
+((* block packages *))
+    ((( super() )))
+
+    \usepackage[T1]{fontenc}
+
+    \usepackage[
+      spanish,
+      es-tabla,
+      es-nodecimaldot
+    ]{babel}
+
+    \usepackage{hyperref}
+
+((* endblock packages *))
+
+
+((* block commands *))
+    \hypersetup{hidelinks=true}
+    \renewcommand{\familydefault}{"Computer Modern"}
+    ((( super() )))
+((* endblock commands *))
+
+((* block author *))
+    \author{
+        Sergio García Prado \\ \texttt{sergio.garcia.prado@alumnos.uva.es}
+    }
+((* endblock author *))
+
+((* block title *))
+    \title{Inferencia Estadística II: Trabajo T1}
+((* endblock title *))
+
+((*- block any_cell -*))
+    ((* if not cell['metadata'].get('ignored', False) *))
+        ((( super() )))
+    ((* endif *))
+((*- endblock any_cell -*))
+
+((* block codecell *))
+    ((* block input_group *))
+    ((* if not cell['outputs'] *))           
+\begin{Verbatim}[
+    frame=single,
+    samepage=true, 
+    xleftmargin=.5cm,
+    xrightmargin=.5cm
+]
+((( cell.source )))
+\end{Verbatim}
+        ((* endif *))
+    ((* endblock input_group *))
+
+    ((* block output_group *))
+        ((* if cell['outputs'] *))
+            \vspace*{11pt}
+            ((( super() )))
+        ((* endif *))
+    ((* endblock output_group *))
+((* endblock codecell *))
