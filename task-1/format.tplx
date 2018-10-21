@@ -7,8 +7,11 @@
 ((* endblock docclass *))
 
 ((* block packages *))
-    ((( super() )))
+    \usepackage{scrlfile}
+    \PreventPackageFromLoading{mathpazo}
 
+    ((( super() )))
+    
     \usepackage[T1]{fontenc}
 
     \usepackage[
@@ -26,7 +29,6 @@
 
 ((* block commands *))
     \hypersetup{hidelinks=true}
-    \renewcommand{\familydefault}{"Computer Modern"}
     \setkeys{Gin}{width=0.6\linewidth}
 
     ((( super() )))
