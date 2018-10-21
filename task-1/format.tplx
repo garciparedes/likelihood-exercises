@@ -29,7 +29,7 @@
 
 ((* block commands *))
     \hypersetup{hidelinks=true}
-    \setkeys{Gin}{width=0.6\linewidth}
+    \setkeys{Gin}{width=0.7\linewidth}
 
     ((( super() )))
 ((* endblock commands *))
