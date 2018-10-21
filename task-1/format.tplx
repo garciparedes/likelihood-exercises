@@ -2,28 +2,22 @@
 ((*- extends 'article.tplx' -*))
 
 ((* block docclass *))
-    \documentclass{article}
-
+    \documentclass[a4paper,11pt]{article}
 ((* endblock docclass *))
 
 ((* block packages *))
     \usepackage{scrlfile}
     \PreventPackageFromLoading{mathpazo}
-
     ((( super() )))
-    
     \usepackage[T1]{fontenc}
-
     \usepackage[
       spanish,
       es-tabla,
       es-nodecimaldot
     ]{babel}
-    
     \usepackage{graphicx}
-
+    \usepackage{geometry}
     \usepackage{hyperref}
-
 ((* endblock packages *))
 
 
