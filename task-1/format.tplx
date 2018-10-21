@@ -16,6 +16,8 @@
       es-tabla,
       es-nodecimaldot
     ]{babel}
+    
+    \usepackage{graphicx}
 
     \usepackage{hyperref}
 
@@ -25,6 +27,8 @@
 ((* block commands *))
     \hypersetup{hidelinks=true}
     \renewcommand{\familydefault}{"Computer Modern"}
+    \setkeys{Gin}{width=0.6\linewidth}
+
     ((( super() )))
 ((* endblock commands *))
 
@@ -61,8 +65,9 @@
 
     ((* block output_group *))
         ((* if cell['outputs'] *))
-            \vspace*{11pt}
+            \vspace{10pt}
             ((( super() )))
+            \vspace{10pt}
         ((* endif *))
     ((* endblock output_group *))
 ((* endblock codecell *))
