@@ -24,8 +24,8 @@
 ((* block commands *))
     \hypersetup{hidelinks=true}
     \setkeys{Gin}{width=0.7\linewidth}
-
     ((( super() )))
+    \newgeometry{margin={20mm, 22mm}}
 ((* endblock commands *))
 
 ((* block author *))
